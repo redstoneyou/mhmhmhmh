@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: #008cff;position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: cursive;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    position: center;
+    display: flex;
+}
+.btn-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 150px;
+    overflow: hidden;
+    position: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.screen{
+    display:none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.screen.active{
+    display: block;
+}
+
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    
+    gap: 10px;
+}
+
+.photos > div{
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+#main-screen{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+#main-screen h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#main-screen p{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+#enter-btn{
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enter-btn:hover{
+    background-color: aquamarine;
+}
+
+#move-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+#next-btn{
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+#back-btn{
+    justify-content: left;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+#next-btn:hover{
+    background-color: aquamarine;
+}
+
+#back-btn:hover{
+    background-color: aquamarine;
+}
